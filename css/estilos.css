@@ -11,6 +11,7 @@ body{
     height: 100vh;
     font-size: 12px;
     color: wheat;
+    
 }
 
 /*se a tela tiver pelo menos 400px vai carregar estes estilos */
@@ -40,6 +41,10 @@ a{
 }
 a:hover{
     text-decoration: underline;
+}
+
+div{
+    background-color: rgba(3, 3, 3, 0.527);
 }
 
 header{
