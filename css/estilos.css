@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Press+Start+2P&family=Source+Code+Pro:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500&family=Oswald:wght@300;400&family=Righteous&display=swap');
 
 /*soft reset do css */
 *{
@@ -13,7 +13,7 @@ body{
     height: 100vh;
     font-size: 12px;
     color: wheat;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Oswald', sans-serif;
 }
 
 /*se a tela tiver pelo menos 400px vai carregar estes estilos */
@@ -86,12 +86,12 @@ header{
 
 .site-titulo{
     font-size: 4em;
-    font-family: 'Gloria Hallelujah';
+    font-family: 'Righteous', cursive;
 }
 
 .site-subtitulo{
     font-style: italic;
-    font-family: 'Press Start 2P';
+    font-family: 'Inconsolata', monospace;
     line-height: 1.8em;
 }
 
@@ -106,7 +106,7 @@ header{
 }
 
 .portfolio h2{
-    font-family: 'Press Start 2P';
+    font-family: 'Oswald', sans-serif;
     color: whitesmoke;
     margin-bottom: 1.5em;
     font-size: 2em;
