@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Press+Start+2P&family=Source+Code+Pro:wght@300;400;700&display=swap');
+
+/*soft reset do css */
 *{
     margin: 0;
     padding: 0;
@@ -7,11 +10,10 @@
 body{
     background-image: url('../img/fundo2.jpg');
     background-size: 100vw auto;
-    font-family: arial;
     height: 100vh;
     font-size: 12px;
     color: wheat;
-    
+    font-family: 'Source Code Pro', monospace;
 }
 
 /*se a tela tiver pelo menos 400px vai carregar estes estilos */
@@ -36,14 +38,14 @@ body{
 
 a{
     /* color: cornsilk; */
-    color: teal;
+    color: rgb(3, 58, 58);
     text-decoration: none;
 }
 a:hover{
     text-decoration: underline;
 }
 
-div{
+.container{
     background-color: rgba(3, 3, 3, 0.527);
 }
 
@@ -84,13 +86,34 @@ header{
 
 .site-titulo{
     font-size: 4em;
+    font-family: 'Gloria Hallelujah';
 }
 
 .site-subtitulo{
     font-style: italic;
+    font-family: 'Press Start 2P';
+    line-height: 1.8em;
 }
 
 .img-portifolio{
     height: 170px;
     width: 190px;
+}
+
+.portfolio{
+    padding: 2em;
+    height: 100vh;
+}
+
+.portfolio h2{
+    font-family: 'Press Start 2P';
+    color: whitesmoke;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+}
+
+.portfolio .grid{
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 240px 240px; 
 }
