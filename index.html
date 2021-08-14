@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="corpo">
         <header>
             <nav class="menu">
                 <ul>
@@ -26,34 +26,105 @@
                 <h2 class="site-subtitulo"> Jr. frontend developer</h2>
             </div>
         </header>
-        <section class="portfolio" id="portfolio">
+        <section class="sobre container" id="sobre">
+            <h2>Sobre</h2>
+            <figure class="avatar">
+                <img src="img/julia.jpeg">
+            </figure>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam enim maiores qui, quos nemo laborum
+                necessitatibus pariatur vero. Totam autem consequatur eligendi sint vero ullam pariatur explicabo
+                aperiam exercitationem atque!
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam enim maiores qui, quos nemo laborum
+                necessitatibus pariatur vero. Totam autem consequatur eligendi sint vero ullam pariatur explicabo
+                aperiam exercitationem atque!
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam enim maiores qui, quos nemo laborum
+                necessitatibus pariatur vero. Totam autem consequatur eligendi sint vero ullam pariatur explicabo
+                aperiam exercitationem atque!
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam enim maiores qui, quos nemo laborum
+                necessitatibus pariatur vero. Totam autem consequatur eligendi sint vero ullam pariatur explicabo
+                aperiam exercitationem atque!
+            </p>
+            <p>
+                Este site foi criado durante as aulas do <a class="senac" href="https://sp.senac.br/americana">Curso
+                    Técnico em Informática do Senac Americana</a>.
+            </p>
+        </section>
+
+        <section class="portfolio container" id="portfolio">
             <h2>Portfólio</h2>
             <div class="grid">
-                <figure>
-                    <img src="img/site-moda.png" alt="Site de Moda" class="img-portifolio">
-                    <figcaption>Site de Moda</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/site-pizzaria.png" alt="Site pizzaria" class="img-portifolio">
-                    <figcaption>Site pizzaria</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/site-biblioteca.png" alt="Site biblioteca" class="img-portifolio">
-                    <figcaption>Site Biblioteca</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/webdesign.png" alt="Webdesign" class="img-portifolio">
-                    <figcaption>Webdesign</figcaption>
-                </figure>
+                <div class="flip-card">
+                    <div class="card">
+                        <figure class="card-front">
+                            <img src="img/site-moda.png" alt="Site de Moda" class="img-portifolio">
+                        </figure>
+                        <div class="card-back">
+                            <h3>Site Moda</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="card">
+                        <figure class="card-front">
+                            <img src="img/site-pizzaria.png" alt="Site pizzaria" class="img-portifolio">
+                        </figure>
+                        <div class="card-back">
+                            <h3>Site pizzaria</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="card">
+                        <figure class="card-front">
+                            <img src="img/site-biblioteca.png" alt="Site biblioteca" class="img-portifolio">
+                        </figure>
+                        <div class="card-back">
+                            <h3>Site biblioteca</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="card">
+                        <figure class="card-front">
+                            <img src="img/webdesign.png" alt="Webdesign" class="img-portifolio">
+                        </figure>
+                        <div class="card-back">
+                            <h3>Webdesign</h3>
+                        </div>
+                    </div>
+                </div>
 
-                <figure>
-                    <img src="img/livros.jpeg" alt="Livros" class="img-portifolio">
-                    <figcaption>Livros</figcaption>
-                </figure>
+                <div class="flip-card">
+                    <div class="card">
+                        <figure class="card-front">
+                            <img src="img/livros.jpeg" alt="Livros" class="img-portifolio">
+                        </figure>
+                        <div class="card-back">
+                            <h3>Livros</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="card">
+                        <figure class="card-front">
+                            <img src="img/food.jpg" alt="Receitas" class="img-portifolio">
+                        </figure>
+                        <div class="card-back">
+                            <h3>Receitas</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="contato" id="contato">
+        <section class="contato container" id="contato">
             <h2>Contato</h2>
             <div class="grid icones">
                 <a href="https://github.com/MoreiraJulia" target="_blank">
@@ -69,6 +140,7 @@
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
+        </section>
     </div>
 </body>
 

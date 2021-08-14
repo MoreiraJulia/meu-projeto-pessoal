@@ -14,6 +14,7 @@
 body{
     background-image: url('../img/fundo2.jpg');
     background-size: 100vw auto;
+    background-attachment: fixed;
     height: 100vh;
     font-size: 12px;
     /* color: wheat; */
@@ -47,7 +48,12 @@ a{
     text-decoration: none;
 }
 
-.container{
+.senac{
+    color:white;
+    text-decoration: underline;
+}
+
+.corpo{
     background-color: rgba(3, 3, 3, 0.527);
 }
 
@@ -122,17 +128,46 @@ header{
 }
 
 .portfolio,
-.contato{
+.contato,
+.sobre{
     padding: 2em;
     min-height: 100vh;
 }
 
 .portfolio h2,
-.contato h2{
+.contato h2,
+.sobre h2{
     font-family: 'Roboto Mono', monospace;
     color: var(--cor-do-texto);
     margin-bottom: 1.5em;
     font-size: 2em;
+}
+
+@media (min-width: 1200px){
+    .container{
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.sobre p{
+    color: white;
+    text-indent: 1.4em;
+    margin-bottom: 1.4em;
+    text-align: justify;
+}
+
+.sobre .avatar{
+    margin-left: 2em;
+    /* clip-path: circle(50%) */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+@media (min-width: 600px){
+    .sobre .avatar{
+        float: right;
+        /* clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%); */
+    }
 }
 
 .portfolio .grid{
@@ -165,5 +200,58 @@ header{
     width: 240px;
     object-fit: cover;
     object-position: left top;
+    transition: transform 500ms;
 }
 
+/* .img-portifolio:hover{
+    transform: scale(1.1) rotate(0deg);
+} */
+
+.contato .icones{
+    text-align: center;
+}
+
+.contato a{
+    color: var(--cor-do-texto);
+    font-size: 4em;
+    transition: text-shadow 0.5s;
+}
+
+.contato a:hover{
+    text-shadow: 0px 0px 10px rgba(255, 255, 255,.5);
+}
+
+.flip-card{
+    height: 180px;
+    perspective: 1000px;
+}
+
+.flip-card:hover .card{
+    transform: rotateY(180deg);
+}
+
+.card{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 3s;
+}
+
+.card-front,
+.card-back{
+    backface-visibility: hidden;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.card-back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(255, 255, 255,.7); */
+    background-color: rgb(3, 58, 58);
+    height: 180px;
+    width: 100%;
+    transform: rotateY(180deg);
+}
